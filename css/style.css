@@ -1,0 +1,15 @@
+.anon{
+    font-family:'Anonymous Pro';
+    font-size: 48px;
+}
+.majormono{
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 600!important;
+    /* text-shadow: -0.08em 0 red, 0.08em 0 cyan; */
+}
+.papyrus{
+    font-family: 'papyrus';
+}
+.bigpx{
+    font-size: 48px;
+}

@@ -1,0 +1,11 @@
+h1{
+    color:darkturquoise;
+    background-color: dimgray;
+    font-size:50px;
+    font-family: fantasy;
+    text-align: center;
+    text-shadow: 2px 4px lightblue;
+}
+.system{
+    font-family:monospace;
+}
