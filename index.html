@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="h-100">
 
 <head>
     <title>Portfolio Page</title>
@@ -13,12 +13,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap&" rel="stylesheet">
-
 </head>
 
 
 
-<body>
+<body class="d-flex flex-column h-100">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
@@ -56,112 +55,140 @@
     </header>
     <!--    Intro   -->
     <br>
-    <section class="site-banner" id="home">
-        <div class="container-lg">
-            <br><br>
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-6 text-center text-md-start">
-                    <h1>
-                        <div class="display-3 text-muted">Hello!</div>
-                        <div class="display-2 text-uppercase fw-normal font-effect-anaglyph">I am Soren</div>
-                    </h1>
-                    <p class="lead my-2 ">back-end dev. wondering why my page is fast but ugly?
-                        that's why.</p>
-                    <button type="button" class="btn btn-sm button fancy-button lead rounded-pill my-2">Hire me</button>
-                    <button type="button" class="btn button fancy-button-secondary btn-sm lead rounded-pill">Get CV</button>
-                </div>
-                <div class="col-md-6 text-center d-none d-md-block">
-                    <img class="img-fluid" src="/img/hackerman.jpg" alt="Picture of Hackerman">
-                </div>
-            </div>
-        </div>
-    </section>
-<br>
-    <!-- Services provided -->
-    <section class="my-services" id="services">
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">
-                    <h2 class="display-5">I do stuff</h2>
-                </div>
-                <div class="col-md-5 text-center text-md-start">
-                    <div class="services">
-                        <h3>C#</h3>
-                        <p></p>
-                    </div>
+    <main>
+        <section class="banner-area" id="home">
+            <div class="container-lg">
+                <br><br>
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-6 text-center text-md-start">
+                        <h1>
+                            <div class="display-3 text-muted">Hello!</div>
+                            <div class="display-2 text-uppercase fw-normal font-effect-anaglyph">I am Soren</div>
+                        </h1>
+                        <p class="lead my-2 ">back-end dev. wondering why my page is fast but ugly?
+                            that's why.</p>
+                        <a href="mailto:sgbogelund@gmail.com"><button type="button" class="btn btn-sm button fancy-button lead rounded-pill my-2">Hire
+                            me</button></a>
+                        <a href="assests/CV2021DK.pdf"><button type="button" class="btn fancy-button-secondary btn-sm lead rounded-pill">Get CV</button></a>
 
-                    <div class="services">
-                        <h3>GML</h3>
-                        <p></p>
                     </div>
-
-                    <div class="services">
-                        <h3>Python</h3>
-                        <p></p>
-                    </div>
-
-                    <div class="services">
-                        <h3></h3>
-                        <p></p>
+                    <div class="col-md-6 text-center d-none d-md-block">
+                        <img class="img-fluid" src="/img/hackerman.jpg" alt="Picture of Hackerman">
                     </div>
                 </div>
             </div>
-            <div class="services">
+        </section>
+        <!-- Services provided -->
+        <section class="my-services-area" id="services">
+            <div class="container-lg">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <h2 class="display-5">I do stuff</h2>
+                    </div>
+                    <div class="col-md-5 text-center text-md-start">
+                        <div class="services">
+                            <h3>C#</h3>
+                            <p></p>
+                        </div>
+
+                        <div class="services">
+                            <h3>GML</h3>
+                            <p></p>
+                        </div>
+
+                        <div class="services">
+                            <h3>Python</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--    bout me     -->
+        <section class="about-me-area" id="about">
+            <div class="container-lg">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12 text-center text-md-start">
+                        <h2 class="display-4">About me</h2>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque aspernatur,
+                            magnam
+                            vero
+                            ratione reiciendis commodi rem necessitatibus dolorem. Explicabo ipsum voluptatem esse, quos
+                            accusantium veritatis distinctio fugit qui doloribus voluptate?</p>
+                        <div class="about-me__body">
+                            <p></p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <img src="img/partyboi.jpg" width=200px alt="party boi"> -->
+        </section>
+
+        <!-- my work    -->
+        <section class="my-work-area" id="work">
+            <div class="container-lg">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-12 text-center text-md-start">
+                        <h2 class="display-4">Portfolio</h2>
+                        <div class="portfolio">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="0" class="active" aria-current="true"
+                                        aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleIndicators"
+                                        data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="img/code1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/code2.png" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="img/code3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-        </div>
-
-        <a href="#work" class="btn">
-        </a>
-
-    </section>
-
-
-    <!--    bout me     -->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about"></h2>
-        <p class="section__subtitle section__subtitle--about"></p>
-        <div class="about-me__body">
-            <p></p>
-            <p></p>
-        </div>
-       <!-- <img src="img/partyboi.jpg" width=200px alt="party boi"> -->
-    </section>
-
-    <!-- my work    -->
-    <section class="my-work" id="work">
-        <h2 class="section__title"></h2>
-        <p class="section__subtitle"></p>
-        <div class="portfolio">
-
-            <!--
-            <!--    Portfolio img 1     --
-            <a href="#" class="portfolio__item">
-                <img src="img/codeblocks.png" alt="codeblocks" class="portfolio__img" width=100px>
-            </a>
-
-            <!--    Portfolio img 2     --
-            <a href="#" class="portfolio__item">
-                <img src="img/codeblocks.png" alt="codeblocks" class="portfolio__img" width=100px>
-            </a>
-            -->
-
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!--    footer  -->
-    <footer>
-        <div class="container-lg">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-md-5 text-center text-md-start">                
-                    <ul class="list-group list-group-horizontal">
-                        <li class="list-group-item"><a href="mailto:sgbogelund@gmail.com" class="fw-light text-dark">sgbogelund@gmail.com</a></li>
-                        <li class="list-group-item"><a href="https://github.com/" class="fw-light text-dark">github</a></li>
-                        <li class="list-group-item"><a href="https://linkin.com/" class="fw-light text-dark">linkin</a></li>
-                        <li class="list-group-item"><a href="" class="fw-light text-dark">b</a></li>
-                        <li class="list-group-item"><a href="" class="fw-light text-dark">c</a></li>
+    <footer class="footer mt-auto py-3 bg-dark">
+        <div class="container-fluid">
+            <div class="justify-content-center align-items-center">
+                <div class="text-center text-md-start">
+                    <ul class="list-group list-group-horizontal justify-content-center">
+                        <li class="list-group-item"><a href="mailto:sgbogelund@gmail.com"
+                                class="fw-light text-dark">sgbogelund@gmail.com</a></li>
+                        <li class="list-group-item"><a href="https://github.com/" class="fw-light text-dark">github</a>
+                        </li>
+                        <li class="list-group-item"><a href="https://linkin.com/"
+                                class="fw-light text-dark">linkedin</a>
+                        </li>
                     </ul>
-                </div>         
+                </div>
             </div>
         </div>
     </footer>

@@ -2,6 +2,27 @@
     --gradient-color: linear-gradient(90deg,red 0%,cyan 100%)
 }
 
+section.banner-area{
+    padding-top: 10%;
+    padding: 8rem, 5rem;
+}
+
+section.my-services-area{
+    padding-top: 25%;
+    padding: 8rem, 5rem;
+}
+
+section.about-me-area{
+    padding-top: 25%;
+    padding: 8rem, 5rem;
+}
+
+section.my-work-area{
+    padding-top: 25%;
+    padding: 8rem, 5rem;
+    padding-bottom: 25%;
+}
+
 .anon{
     font-family:'Anonymous Pro';
     font-size: 48px;
@@ -17,6 +38,7 @@
 .bigpx{
     font-size: 48px;
 }
+
 button{
     margin-right: 4px;
     margin-left: 10px;
@@ -61,5 +83,12 @@ button.fancy-button-secondary:hover{
     color: whitesmoke;
     transition: background.6s ease;
     box-shadow: var(--box-shadow);
+}
+a.fancy-button-secondary{
+    color: black;
+    
+}
+a.fancy-button-secondary:hover{
+    color: whitesmoke;
 }
 
