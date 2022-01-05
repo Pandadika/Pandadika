@@ -1,3 +1,7 @@
+:root{
+    --gradient-color: linear-gradient(90deg,red 0%,cyan 100%)
+}
+
 .anon{
     font-family:'Anonymous Pro';
     font-size: 48px;
@@ -13,3 +17,49 @@
 .bigpx{
     font-size: 48px;
 }
+button{
+    margin-right: 4px;
+    margin-left: 10px;
+    padding: .5rem 1rem;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+    font-size: 16px/20px;  
+}
+
+button.fancy-button{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background.6s ease;
+    box-shadow: var(--box-shadow);
+}
+button.fancy-button:hover{
+    background: white;
+    background-clip: padding-box;
+    color: black;
+}
+button.fancy-button::after,button.fancy-button-secondary::after{
+    position: absolute;
+    top: -2px; 
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: var(--gradient-color);
+    content: '';
+    z-index: -1;
+    border-radius: 50rem!important;
+}
+button.fancy-button-secondary{
+    background: white;
+    background-clip: padding-box;
+    color: black;
+}
+button.fancy-button-secondary:hover{
+    background: var(--gradient-color);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background.6s ease;
+    box-shadow: var(--box-shadow);
+}
+
